@@ -16,7 +16,7 @@ class ToFileStream extends Writable {
     _write(chunk, encoding, cb) {
         mkdirp(dirname(chunk.path))
             .then(() => fs.writeFile(chunk.path, chunk.content))
-            .then(() => cb())
+            .then(() => cb()) // 这里的cb()会触发 `drain` 事件
             .catch(cb)
     }
 }
