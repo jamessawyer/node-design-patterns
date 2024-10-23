@@ -1,0 +1,30 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+dependencies:
+  json-over-tcp-2:
+    specifier: ^0.3.5
+    version: 0.3.5
+
+packages:
+
+  /is-buffer@2.0.5:
+    resolution: {integrity: sha512-i2R6zNFDwgEHJyQUtJEk0XFi1i0dPFn/oqjK3/vPCcDeJvW5NQ83V8QbicfF1SupOaB0h8ntgBC2YiE7dfyctQ==}
+    engines: {node: '>=4'}
+    dev: false
+
+  /is-stream@2.0.1:
+    resolution: {integrity: sha512-hFoiJiTl63nn+kstHGBtewWSKnQLpyb155KHheA1l39uvtO9nWIop1p3udqPcUd/xbF1VLMO4n7OI6p7RbngDg==}
+    engines: {node: '>=8'}
+    dev: false
+
+  /json-over-tcp-2@0.3.5:
+    resolution: {integrity: sha512-aN8/NDN3eGy9zbF4e+nwEKjt/y3M3XJUJnT2KAUDpPm1YEH2HefoLECg9KUuaQEJYd4xkQYutbnxpcXjaQENkA==}
+    engines: {node: '>=10'}
+    dependencies:
+      is-buffer: 2.0.5
+      is-stream: 2.0.1
+    dev: false
