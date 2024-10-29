@@ -1,0 +1,12 @@
+{
+  "plugins": ["@babel/syntax-dynamic-import"],
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        // 表示不需要将es6模块转换为es5
+        "modules": false
+      }
+    ]
+  ]
+}
