@@ -1,7 +1,5 @@
-import nunjucks from 'nunjucks'
-
-const template = '<h1>Hello <i>{{ name }}</i></h1>'
+import chalk from 'chalk'
 
 export function sayHello(name) {
-    return nunjucks.renderString(template, { name })
+    return `Hello ${chalk.green(name)}`
 }
