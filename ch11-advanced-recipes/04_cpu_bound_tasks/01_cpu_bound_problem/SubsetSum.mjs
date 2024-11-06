@@ -12,6 +12,7 @@ export class SubsetSum extends EventEmitter {
         this.totalSubsets = 0
     }
 
+    // 产生所有子集合，并对子集合进行处理（同步的）
     _combine(set, subset) {
         for (let i = 0; i < set.length; i++) {
             const newSubset = [...subset, set[i]]
