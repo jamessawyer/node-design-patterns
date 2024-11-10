@@ -1,5 +1,5 @@
 import { parentPort } from 'node:worker_threads'
-import { SubsetSum } from '../subsetSum.mjs'
+import { SubsetSum } from '../SubsetSum.mjs'
 
 parentPort.on('message', msg => {
     const subsetSum = new SubsetSum(msg.sum, msg.set)
